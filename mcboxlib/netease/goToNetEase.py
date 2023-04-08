@@ -14,6 +14,7 @@ def newFile(filename: str,neteaseMinecraft: str) -> int:
     fileText += uuid.uuid4().hex()
     with open(newFileName, 'w') as f:
         f.write(fileText)
+    #Todo: Using ZipFile make New Sha256
     del fileText
     del newFileName
     return 0
